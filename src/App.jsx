@@ -63,11 +63,27 @@ function App() {
           </div>
           <p>Uttarakhand Flood Monitoring System using Sentinel-1</p>
           <div className="action-btns">
-            <div className="application-btn">
+            <div
+              className="application-btn"
+              onClick={() =>
+                window.open(
+                  "https://proj-42934.projects.earthengine.app/view/flood-mapping",
+                  "_blank"
+                )
+              }
+            >
               <span>Visit Application</span>
               <Globe />
             </div>
-            <div className="code-btn">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://code.earthengine.google.com/f9fa83b6e77793fd4556be9745506ddc",
+                  "_blank"
+                )
+              }
+              className="code-btn"
+            >
               <span>See Code</span>
               <ArrowRight />
             </div>
